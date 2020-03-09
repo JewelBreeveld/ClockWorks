@@ -2,9 +2,9 @@ import React from "react";
 
 export default function NavigationBar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <a className="navbar-brand" href="#">
-        Navbar
+    <nav className="navbar navbar-expand-lg navbar-light bg-dark">
+      <a className="navbar-brand text-white" href="home">
+        ClockWorks Light & Sound
       </a>
       <button
         className="navbar-toggler"
@@ -19,67 +19,33 @@ export default function NavigationBar() {
       </button>
 
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul className="navbar-nav mr-auto">
-          <li className="nav-item active">
-            <a className="nav-link" href="#">
-              Home <span className="sr-only">(current)</span>
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">
-              Link
-            </a>
-          </li>
+        <ul className="navbar-nav ml-auto">
           <li className="nav-item dropdown">
             <a
-              className="nav-link dropdown-toggle"
-              href="#"
+              className="nav-link text-white dropdown-toggle"
+              href="menu"
               id="navbarDropdown"
               role="button"
               data-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
             >
-              Dropdown
+              Language
             </a>
             <div className="dropdown-menu" aria-labelledby="navbarDropdown">
               <a className="dropdown-item" href="#">
-                Action
+                Dutch
               </a>
               <a className="dropdown-item" href="#">
-                Another action
+                English
               </a>
               <div className="dropdown-divider"></div>
               <a className="dropdown-item" href="#">
-                Something else here
+                Papiamentu
               </a>
             </div>
           </li>
-          <li className="nav-item">
-            <a
-              className="nav-link disabled"
-              href="#"
-              tabindex="-1"
-              aria-disabled="true"
-            >
-              Disabled
-            </a>
-          </li>
         </ul>
-        <form className="form-inline my-2 my-lg-0">
-          <input
-            className="form-control mr-sm-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button
-            className="btn btn-outline-success my-2 my-sm-0"
-            type="submit"
-          >
-            Search
-          </button>
-        </form>
       </div>
     </nav>
   );
