@@ -2,7 +2,11 @@ import React from "react";
 import "./App.css";
 
 function App() {
-  return <h2>ClockWorks Curacao</h2>;
+  return (
+    <div>
+      <h2>ClockWorks Curacao</h2>
+    </div>
+  );
 }
 
 export default App;
